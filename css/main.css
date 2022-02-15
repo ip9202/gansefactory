@@ -1,12 +1,12 @@
 /* ==========================================================================
    1. IMPORT GOOGLE FONTS
    ========================================================================== */
-@import url("https://fonts.googleapis.com/css?family=Montserrat:500,700|Open+Sans");
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500,700|Open+Sans');
 /* ==========================================================================
    2. GENERAL
    ========================================================================== */
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color: #546e7a;
   font-size: 14px;
   font-weight: 400;
@@ -22,7 +22,7 @@ p {
   font-size: 14px;
   color: #546e7a;
   line-height: 26px;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   margin-bottom: 0;
 }
 
@@ -44,7 +44,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 40px;
   font-weight: 700;
   color: #263238;
@@ -107,7 +107,7 @@ a:not([href]):not([tabindex]):hover {
 }
 
 .section-header .section-title:before {
-  content: "";
+  content: '';
   position: absolute;
   bottom: -8px;
   width: 80px;
@@ -122,7 +122,7 @@ a:not([href]):not([tabindex]):hover {
   font-size: 60px;
   color: rgba(0, 0, 0, 0.07);
   z-index: 2;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   text-transform: capitalize;
   position: absolute;
@@ -172,7 +172,7 @@ a:not([href]):not([tabindex]):hover {
 }
 
 .btn-effect:after {
-  content: "";
+  content: '';
   position: absolute;
   width: 0;
   height: 100%;
@@ -424,6 +424,17 @@ button:focus {
   filter: alpha(opacity=80);
 }
 
+.overlay_video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background: #f97794;
+  opacity: 0.5;
+  filter: alpha(opacity=80);
+}
+
 /* ==========================================================================
    Navbar Style
    ========================================================================== */
@@ -537,7 +548,7 @@ button:focus {
 }
 
 .navbar-expand-md .navbar-nav .nav-link:before {
-  content: "";
+  content: '';
   position: absolute;
   bottom: 0;
   left: 0;
@@ -765,7 +776,7 @@ button:focus {
 }
 
 .hero-area-2 .contents .tag-type ul li:before {
-  content: "";
+  content: '';
   width: 4px;
   height: 4px;
   background: #fff;
@@ -784,7 +795,7 @@ button:focus {
 }
 
 .hero-area-2 .contents .tag-type ul:before {
-  content: "";
+  content: '';
   width: 40px;
   height: 1px;
   background: #f1f1f1;
@@ -794,7 +805,7 @@ button:focus {
 }
 
 .hero-area-2 .contents .tag-type ul:after {
-  content: "";
+  content: '';
   width: 40px;
   height: 1px;
   background: #f1f1f1;
@@ -1006,7 +1017,8 @@ button:focus {
  Video promo Style
  ========================================================================== */
 .video-promo {
-  background: url(../img/bg/video.jpg);
+  /* background: url(../img/bg/video.jpg); */
+  /* color: #fff; */
   position: relative;
 }
 
