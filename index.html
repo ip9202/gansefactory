@@ -27,7 +27,24 @@
       font-family: verdana;
       font-size: 18px;
     }
-  </style>
+
+    .history h2 {position: relative; font-size: 24px; color: #000; line-height: 1;}
+      .history h2:before {
+        content:""; position: absolute;
+        left:-48px; top:50%; transform: translateY(-50%);
+        width: 14px; height: 14px; border-radius: 100%;
+        background:#fff; border: 3px solid #ff5a2b;
+        box-sizing: border-box;}
+    
+      .history div {position: relative; padding: 0 0 0 48px;}
+      .history div:before { content:""; position:absolute; left:6px; top:5px;
+              width: 2px; height:100%; background:#ddd;}
+      .history div:first-child:before { top:10px; height:calc(100% - 10px);}
+    
+    
+      .history ol { padding: 20px 20px 74px; list-style-type: disc; }
+      .history li {font-size: 17px; color:#000; line-height: 29px;  }
+  </style>  
 </head>
 
 <body>
@@ -2273,6 +2290,7 @@
     </div>
   </section>
   <!-- blog Section End -->
+  
   <section id="histories" class="section">
     <div class="container">
       <div class="section-header">
@@ -2281,53 +2299,70 @@
         <p class="section-subtitle">간세팩토리 연혁</p>
         <!-- <p class="section-subtitle">Plastic waste that is thrown away.. GanseFactory will recycle it as a resource again.</p> -->
       </div>
-      <div class="row justify-content-center">
-        <table class="table table-bordered table-hover table-responsive-sm table-responsive-md" style="width: 700px"> 
-          <tbody>
-            <tr class="table-primary">
-              <th scope="row"><p>2018</p></th>
-              <td colspan="2"><p>간세팩토리 설립</p></td>
 
-            </tr>
-            <tr class="table-success">
-              <th scope="row"><p>2019 ~ 2020</p></th>
-              <td colspan="2"><p>세<sub>상을</sub> 바<sub>꾸는</sub> 우<sub>리</sub> 캠페인 진행 계약 (종이컵 자원순환 환경캠페인)</p></td>
-            </tr>
-            <tr class="table-success">
-              <th scope="row"><p>2019</p></th>
-              <td colspan="2"><p>제주올레 방향간세, 화살표 제작, 설치</p></td>
-            </tr>
-            <tr class="table-warning">
-              <th scope="row"><p>2019 ~ 2020</p></th>
-              <td colspan="2"><p>나한티 풉서 유지보수 계약 (재활용품 자동수거보상기)</p></td>
-            </tr>            
-            <tr class="table-primary">
-              <th scope="row"><p>2020 ~</p></th>
-              <td colspan="2"><p>나<sub>부터</sub> 꽁<sub>초를</sub> 치<sub>우자</sub> 캠페인 진행 계약 (꽁초줍기 환경캠페인)</p></td>
-            </tr>
-            <tr class="table-success">
-              <th scope="row"><p>2020 ~</p></th>
-              <td colspan="2"><p>Love for planet 캠페인 진행 계약</p></td>
-            </tr>            
-            <tr class="table-success">
-              <th scope="row"><p>2020</p></th>
-              <td colspan="2"><p>'KOYO' 업사이클링 벤치 제작, 설치</p></td>
-            </tr>
-            <tr class="table-warning">
-              <th scope="row"><p>2021</p></th>
-              <td colspan="2"><p>(주)간세팩토리 법인설립</p></td>
-            </tr>
-            <tr class="table-primary">
-              <th scope="row"><p>2021</p></th>
-              <td colspan="2"><p>'MOJAK' 업사이틀링 벤치 제작, 설치</p></td>
-            </tr>   
-            <tr class="table-success">
-              <th scope="row"><p>2022.09</p></th>
-              <td colspan="2"><p>플라스틱 새활용 팩토리 오픈 및 운영</p></td>
-            </tr>
-          </tbody>
-        </table>
+<!-- 연혁 테스트-->
+
+      <div class="row justify-content-center">
+        <div class="history">
+          <div>
+            <h2>2018</h2>
+            <ol>
+              <li>간세팩토리 설립</li>
+            </ol>
+          </div>
+
+          <div>
+            <h2>2019</h2>
+            <ol>
+              <li>세상을 바꾸는 우리 캠페인 진행 계약 (종이컵 자원순환 환경캠페인)</li>
+              <li>제주올레 방향간세, 화살표 제작, 설치</li>
+              <li>나한티 풉서 유지보수 계약 (재활용품 자동수거보상기)</li>
+            </ol>
+          </div>
+
+          <div>
+            <h2>2020</h2>
+            <ol>
+              <li>나부터 꽁초를 치우자 캠페인 진행 계약 (꽁초줍기 환경캠페인)</li>
+              <li>Love for planet 캠페인 진행 계약</li>
+              <li>'KOYO' 업사이클링 벤치 제작 및 설치</li>
+            </ol>
+          </div>
+
+          <div>
+            <h2>2021</h2>
+            <ol>
+              <li>(주)간세팩토리 법인설립</li>
+              <li>서귀포시 '하영올레' 표식 제작 및 설치</li>
+              <li>'MOJAK' 업사이틀링 벤치 제작 및 설치</li>
+              <li>제주올레 9코스 아트간세 제작 및 설치</li>
+            </ol>
+          </div>
+
+          <div>
+            <h2>2022</h2>
+            <ol>
+              <li>플라스틱 새활용 팩토리 오픈 및 운영</li>
+              <li>새활용지원사업 선정(한국환경협회)</li>
+              <li>업사이클링 벤치 제조 설비 구축</li>
+              <li>업사클링 벤치 및 표식물 제작 및 납품</li>
+              <li>'MOJAK' 업사이틀링 벤치 제작 및 설치</li>
+              <li>제주시 '성안올레' 표식 제작 및 설치</li>
+            </ol>
+          </div>
+
+          <div>
+            <h2>2023</h2>
+            <ol>
+              <li>제주올레 13코스 아트간세 제작 및 설치</li>
+              <li>SK하이닉스 이천공장 '행복더하길' 표식 제작</li>
+              <li>'MOJAK' 업사이틀링 벤치 제작 및 설치</li>
+              <li>서귀포시 남성마을회 '노인성, 소원이 닿다' DOM LED 설치 및 운영</li>
+            </ol>
+          </div>
+        </div>
       </div>
+<!-- 연혁 테스트-->
     </div>
   </section>
   <!-- Clients Section -->
